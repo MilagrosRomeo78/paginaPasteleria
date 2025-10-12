@@ -9,6 +9,7 @@
   --color-cuar: #5d2f77;
   --color-sec: #e45a92;
   --color-ter: #ffacac;
+  --color-quin: #fddbdb;
   --text-main: #f7efef;
   --text-sec: #14012e;
   --text-quin: #853443;
@@ -101,7 +102,7 @@ li {
 }
 
 .hero h1 {
-  font-family: var(--font-sec);
+  font-family: var(--font-main);
   text-transform: capitalize;
   color: var(--color-ter);
   text-shadow: 1px 2px 4px black;
@@ -112,17 +113,21 @@ li {
 }
 .hero h3 {
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
   color: var(--text-main);
+  font-family: var(--font-main);
+}
+.hero span{
   font-family: var(--font-ter);
+  font-size: 3rem;
 }
 .hero button {
   margin-top: 50px;
 }
 /*============= SECTION EXPERIENCE =============*/
 .experience {
-  background-color: var(--color-ter);
+  background-color: var(--color-quin);
   color: var(--color-sec);
 }
 .experience-contenedor {
@@ -131,7 +136,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 30px 0 30px 0;
+  padding: 60px 0 30px 0;
 }
 .experience-title-e-info {
   display: flex;
@@ -152,12 +157,14 @@ li {
 }
 .experience-title h2 {
   text-transform: uppercase;
-  font-size: 40px;
-  font-family: var(--font-ter);
-  color: var(--text-quin)
+  font-size: 35px;
+  font-family: var(--font-sec);
+  color: var(--text-quin);
 }
 .experience-title span {
   color: var(--color-main);
+  font-family: var(--font-ter);
+  font-size: 50px;
 }
 .experience-info {
   width: 40%;
@@ -168,12 +175,10 @@ li {
   font-size: 800;
 }
 .experience-cards {
-  max-width: 1020px;
-  width: 100%;
+  width: 90%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+  justify-content: space-around;
+  gap: 10px;
 }
 .experience-card {
   width: 15%;
@@ -181,7 +186,7 @@ li {
   flex-direction: column;
   gap: 10px;
 }
-.experience-card h5{
+.experience-card h5 {
   font-size: 15px;
   color: var(--text-quin);
 }
@@ -194,32 +199,53 @@ li {
   text-transform: capitalize;
   color: var(--color-main);
 }
-.experience-card-2{
-   width: 15%;
+.experience-card-2 {
+  width: 15%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.experience-card-2 h5{
+.experience-card-2 h5 {
   font-size: 15px;
   color: var(--text-quin);
 }
-.experience-card-2 h3{
-   font-family: var(--font-main);
+.experience-card-2 h3 {
+  font-family: var(--font-main);
   color: var(--color-main);
   text-transform: uppercase;
 }
-.experience-card-2 p{
-    text-transform: capitalize;
+.experience-card-2 p {
+  text-transform: capitalize;
   color: var(--color-main);
 }
-
-/*============= SECTION DESTINY =============*/
-.destiny {
+/*============= SECTION CORTE IMAGEN =============*/
+.corte-imagen {
   background-image: url(../assets/fondo2.jpg);
+  height: 70dvh;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+   display: flex;
+justify-content: center;
+align-items: center;
+}
+.corte-imagen h2{
+  color: var(--color-ter);
+  font-size: 55px;
+text-shadow: 1px 2px 4px black;
+font-family: var(--font-main);
+font-weight: 400;
+}
+.corte-imagen span{
+  font-family: var(--font-ter);
+  font-weight: 600;
+  font-size: 110px;
+  text-transform: capitalize;
+}
+/*============= SECTION DESTINY =============*/
+.destiny {
+  background-color: var(--text-quin);
   width: 100%;
   color: var(--color-ter);
   text-shadow: 1px 2px 4px black;
@@ -238,7 +264,11 @@ li {
 }
 .titles-destiny h2 {
   font-size: 35px;
+  font-family: var(--font-sec);
+}
+.titles-destiny span{
   font-family: var(--font-ter);
+  font-size: 60px;
 }
 .titles-destiny {
   display: flex;
@@ -252,6 +282,7 @@ li {
 }
 .material-symbols-outlined {
   color: var(--color-sec);
+  font-size: 100px;
 }
 .destiny-card {
   display: flex;
@@ -282,4 +313,23 @@ li {
   flex-direction: column;
   max-width: 50px;
 }
-
+/*============= SECTION CONTACTO =============*/
+.contacto{
+  background-image: url(../assets/fondo-medio.jpg);
+  height:60dvh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.contacto h2{
+  width: 83%;
+  display: flex;
+  justify-content: end;
+  color: var(--color-quin);
+  font-family: var(--font-ter);
+  font-size: 80px;
+  text-transform: capitalize;
+}
