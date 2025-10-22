@@ -238,14 +238,14 @@ background-position: center;
 justify-content: center;
 align-items: center;
 }
-.corte-imagen h2{
+.corte-titulo{
   color: var(--text-main);
   font-size: 55px;
 text-shadow: 1px 2px 2px rgb(2, 2, 2);
 font-family: var(--font-main);
 font-weight: 200;
 }
-.corte-imagen span{
+.corte-titulo span{
   font-family: var(--font-ter);
   font-weight: 900;
   font-size: 110px;
@@ -258,7 +258,8 @@ font-weight: 200;
   background-color: var(--text-quin);
   width: 100%;
   color: var(--color-ter);
-  text-shadow: 1px 2px 4px black;
+  
+  text-shadow: 1px 2px 2px #3b3838; 
 }
 .contenedor-destiny {
   display: flex;
@@ -272,26 +273,19 @@ font-weight: 200;
   color: var(--text-main);
   font-size: 25px;
 }
-.titles-destiny h2 {
-  font-size: 35px;
-  font-family: var(--font-sec);
-}
-.titles-destiny span{
-  font-family: var(--font-ter);
-  font-size: 60px;
-}
 .titles-destiny {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  font-family: var(--font-main);
 }
 .destiny-cards {
   display: flex;
   gap: 120px;
 }
-.material-symbols-outlined {
-  color: var(--color-sec);
+.destiny-card .material-symbols-outlined {
+  color: var(--color-ter);
   font-size: 100px;
 }
 .destiny-card {
@@ -304,13 +298,18 @@ font-weight: 200;
   color: var(--text-main);
   font-weight: 800;
   font-size: 25px;
+  font-family: var(--font-main);
 }
 .destiny-card h5 {
-  font-size: 20px;
+  font-size: 25px;
+  font-family: var(--font-sec);
+  font-weight: 200;
+  color: var(--text-main);
 }
 .destiny-card h4 {
   color: var(--text-main);
   font-size: 25px;
+  font-family: var(--font-main);
 }
 .destiny-card-text {
   display: flex;
