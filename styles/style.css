@@ -332,14 +332,26 @@ font-weight: 200;
   background-position: center;
   background-size: cover;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+justify-content: center;
+gap: 30px;
 }
 .contacto h2{
-  width: 83%;
+  width: 100%;
   display: flex;
-  justify-content: end;
   color: var(--color-quin);
   font-family: var(--font-ter);
-  font-size: 80px;
+  font-size:90px;
   text-transform: capitalize;
+  padding-left: 810px;
+}
+.contacto p{
+  width: 100%;
+  display: flex;
+  color: var(--color-quin);
+  font-family: var(--font-ter);
+  font-size:70px;
+  text-transform: capitalize;
+  padding-left: 750px;
+  gap: 30px;
 }
